@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "PT Serif", serif;
+	color: black;
+}
+
+#nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+	background: white;
+	margin-left: 3.8rem;
+	margin-right: 3.8rem;
+}
+
+#nav_links {
+	display: flex;
+	justify-content: center;
+}
+
+.link {
+	background: transparent;
+	border: 0.5px solid #1a73e8;
+	color: #1a73e8;
+	text-decoration: none;
+	margin: 0.5rem;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	padding: 0.6rem 1.5rem;
+}
+
+#nav_logo {
+	width: 35px;
+}
+
+.wrapper {
+	margin: 0px 337px;
+}
+
+.texthero {
+	display: flex;
+	align-items: center;
+	background: #1a73e8;
+	padding: 1rem 0rem;
+	color: rgb(223, 223, 223);
+	font-size: 0.9rem;
+}
+
+.texthero p {
+    color: rgb(223, 223, 223);
+    font-family: "Noto Sans" !important;
+}
+
+.texthero img {
+	max-height: 2rem;
+	margin: 0rem 4.5rem;
+}
+
+/* article meta */
+
+.meta {
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-size: 40px;
+	line-height: 48px;
+	color: #2f2f2f;
+}
+
+.subtitle {
+	font-size: 20px;
+	line-height: 32px;
+	color: #7f7777;
+	font-family: "Noto Sans" !important;
+}
+
+.author {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about {
+	display: flex;
+}
+
+.about img {
+	width: 50px;
+	border-radius: 100%;
+}
+
+.author_name,
+.post_date_readtime {
+	font-size: 14px;
+	margin-left: 1rem;
+	font-family: "Noto Sans" !important;
+}
+
+.author_name {
+	color: #2f2f2f;
+}
+
+.post_date_readtime {
+	color: #7f7777;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.social img {
+	width: 20px;
+	background: white;
+	margin-left: 1rem;
+}
+
+/* content */
+
+.content {
+	font-size: 21px;
+	color: #2f2f2f;
+	line-height: 33px;
+}
+
+@media screen and (max-width: 1200px) {
+	#nav {
+		margin: 0%;
+		padding: 2% 7%;
+	}
+
+	.texthero {
+		margin: 0;
+	}
+
+	.texthero img {
+		margin: 0 7%;
+	}
+
+	.texthero p {
+		display: none;
+	}
+
+	.wrapper {
+		margin: 7%;
+	}
+
+	.meta {
+		padding: 0px;
+		justify-content: left !important;
+	}
+
+	.author {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+
+	.about {
+		margin: 1rem 0;
+	}
+
+	.social {
+		margin: 1rem 0;
+	}
+
+	.social img {
+		margin-left: 0;
+		margin-right: 1rem;
+	}
+
+	.content {
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
